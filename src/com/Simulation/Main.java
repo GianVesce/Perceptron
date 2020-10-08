@@ -10,7 +10,7 @@ import java.awt.event.MouseMotionListener;
 public class Main {
 
     public static void main(String[] args) {
-	    //Creating the window
+        //Creating the window
         Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
 
         //8 and 32 offset exists because of window's decoration being included in the window bounds
@@ -30,6 +30,7 @@ public class Main {
         renderingPanel.setBounds(panelBounds);
         renderingPanel.setBackground(Color.BLACK);
         renderingPanel.addMouseListener(renderingPanel);
+        window.addKeyListener(renderingPanel);
         window.add(renderingPanel);
 
         window.setVisible(true);
