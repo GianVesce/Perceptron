@@ -14,7 +14,7 @@ public class Main {
         Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
 
         //8 and 32 offset exists because of window's decoration being included in the window bounds
-        Rectangle windowSize = new Rectangle(800 + 8 + 8, 800 + 31 + 8);
+        Rectangle windowSize = new Rectangle(screenSize.width/2 - (800 + 8 + 8)/2, screenSize.height/2 - (800 + 31 + 8)/2,800 + 8 + 8, 800 + 31 + 8);
         Rectangle panelBounds = new Rectangle(0, 0, 800, 800);
 
         JFrame window = new JFrame("Perceptron");
